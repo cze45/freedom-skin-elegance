@@ -104,8 +104,8 @@ function Index() {
       </header>
 
       {/* Hero */}
-      <section className="relative px-6 py-12 md:py-24 max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        <div className="space-y-8 z-10">
+      <section className="relative px-6 py-8 md:py-14 max-w-7xl mx-auto grid md:grid-cols-2 gap-10 items-center">
+        <div className="space-y-6 z-10">
           <div className="inline-flex items-center space-x-2 bg-card/80 backdrop-blur-sm px-4 py-2 rounded-full border border-border shadow-sm">
             <span className="text-primary tracking-tight">★★★★★</span>
             <span className="text-xs font-semibold tracking-wide">
@@ -151,9 +151,9 @@ function Index() {
       </section>
 
       {/* Zašto Libertad */}
-      <section id="o-nama" className="bg-card py-24">
+      <section id="o-nama" className="bg-card py-16">
         <div className="max-w-7xl mx-auto px-6">
-          <div className="text-center mb-16">
+          <div className="text-center mb-10">
             <h2 className="font-serif text-4xl md:text-5xl mb-4 italic">
               Zašto Libertad?
             </h2>
@@ -162,8 +162,8 @@ function Index() {
               koje se pamti.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-16">
-            <div className="space-y-4">
+          <div className="grid md:grid-cols-3 gap-10">
+            <div className="space-y-3">
               <h3 className="font-serif text-2xl">Prijatna atmosfera</h3>
               <p className="text-foreground/60 leading-relaxed">
                 Zaboravite na hladne klinike. Kod nas vas čeka miris sveže
@@ -171,7 +171,7 @@ function Index() {
                 komfora — od prvog koraka do poslednjeg.
               </p>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-3">
               <h3 className="font-serif text-2xl">Vrhunska tehnologija</h3>
               <p className="text-foreground/60 leading-relaxed">
                 Koristimo najnoviju generaciju lasera sa naprednim sistemom
@@ -179,7 +179,7 @@ function Index() {
                 najosetljivijim regijama.
               </p>
             </div>
-            <div className="space-y-4">
+            <div className="space-y-3">
               <h3 className="font-serif text-2xl">Stručan pristup</h3>
               <p className="text-foreground/60 leading-relaxed">
                 Naš tim čine sertifikovani stručnjaci koji pažljivo analiziraju
@@ -192,8 +192,8 @@ function Index() {
       </section>
 
       {/* Tretmani */}
-      <section id="tretmani" className="py-24 px-6 max-w-7xl mx-auto">
-        <div className="text-center mb-16">
+      <section id="tretmani" className="py-16 px-6 max-w-7xl mx-auto">
+        <div className="text-center mb-10">
           <h2 className="font-serif text-4xl md:text-5xl mb-4">
             Tretmani epilacije
           </h2>
@@ -201,7 +201,7 @@ function Index() {
             Individualni pristup svakoj regiji
           </p>
         </div>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-4 md:gap-6">
           {tretmani.map((t) => (
             <div key={t.naziv} className="group cursor-pointer">
               <img
@@ -216,17 +216,17 @@ function Index() {
             </div>
           ))}
         </div>
-        <p className="text-center text-sm text-foreground/50 mt-10 max-w-lg mx-auto">
+        <p className="text-center text-sm text-foreground/50 mt-8 max-w-lg mx-auto">
           Tretman je bezbolan, bezbedan i trajan — dlačice se uklanjaju iz
           korena, a koža ostaje glatka i bez iritacija mesecima unapred.
         </p>
       </section>
 
       {/* Utisci klijenata */}
-      <section id="iskustva" className="bg-foreground text-background py-24">
+      <section id="iskustva" className="bg-foreground text-background py-16">
         <div className="max-w-5xl mx-auto px-6">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
+          <div className="grid md:grid-cols-2 gap-10 items-center">
+            <div className="space-y-6">
               <div className="border-l-2 border-primary pl-8 py-2">
                 <p className="text-xl italic mb-4">
                   "Delotvorna epilacija već nakon prvog tretmana, prezadovoljna
@@ -276,11 +276,11 @@ function Index() {
       </section>
 
       {/* FAQ */}
-      <section id="faq" className="py-24 max-w-3xl mx-auto px-6">
-        <h2 className="font-serif text-4xl text-center mb-16">
+      <section id="faq" className="py-16 max-w-3xl mx-auto px-6">
+        <h2 className="font-serif text-4xl text-center mb-10">
           Često postavljana pitanja
         </h2>
-        <div className="space-y-6">
+        <div className="space-y-5">
           {faq.map((item) => (
             <div key={item.pitanje} className="border-b border-border pb-6">
               <h4 className="font-semibold mb-2">{item.pitanje}</h4>
@@ -293,8 +293,8 @@ function Index() {
       </section>
 
       {/* Kontakt */}
-      <section id="kontakt" className="bg-card py-24 px-6">
-        <div className="max-w-5xl mx-auto text-center space-y-10">
+      <section id="kontakt" className="bg-card py-16 px-6">
+        <div className="max-w-5xl mx-auto text-center space-y-6">
           <h2 className="font-serif text-4xl md:text-5xl italic">
             Vaša glatka koža počinje ovde.
           </h2>
@@ -315,9 +315,9 @@ function Index() {
       </section>
 
       {/* Footer */}
-      <footer className="bg-secondary py-16 px-6">
+      <footer className="bg-secondary py-12 px-6">
         <div className="max-w-7xl mx-auto">
-          <div className="grid md:grid-cols-3 gap-12 border-b border-foreground/10 pb-16">
+          <div className="grid md:grid-cols-3 gap-10 border-b border-foreground/10 pb-10">
             <div className="space-y-4">
               <div className="text-2xl font-serif tracking-widest uppercase">
                 Libertad
