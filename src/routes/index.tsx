@@ -32,8 +32,8 @@ export const Route = createFileRoute("/")({
 });
 
 const PHONE = "063 7070936";
-const PHONE_LINK = "tel:0637070936";
-const WHATSAPP_LINK = "https://wa.me/381637070936";
+const PHONE_LINK = "tel:+381637070936";
+
 
 const tretmani = [
   { naziv: "Lice i brada", slika: tretmanLice, alt: "Nežan tretman lica — orhideja" },
@@ -99,6 +99,7 @@ function Index() {
           >
             Zakažite termin
           </a>
+
         </nav>
       </header>
 
@@ -298,8 +299,8 @@ function Index() {
             Vaša glatka koža počinje ovde.
           </h2>
           <p className="text-foreground/60 max-w-xl mx-auto">
-            Pozovite nas ili nam pišite na WhatsApp / Viber — zakazaćemo vaše
-            besplatne konsultacije i odgovoriti na sva pitanja.
+            Pozovite nas — zakazaćemo vaše besplatne konsultacije i odgovorićemo
+            na sva pitanja.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
@@ -308,15 +309,8 @@ function Index() {
             >
               Pozovite: {PHONE}
             </a>
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex justify-center items-center border border-foreground/20 px-10 py-4 rounded-full font-semibold transition-all hover:bg-secondary"
-            >
-              WhatsApp / Viber
-            </a>
           </div>
+
         </div>
       </section>
 
@@ -350,20 +344,6 @@ function Index() {
               </a>
               <div className="flex space-x-4">
                 <a
-                  href={WHATSAPP_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm underline italic hover:text-primary transition-colors"
-                >
-                  WhatsApp
-                </a>
-                <a
-                  href="viber://chat?number=%2B381637070936"
-                  className="text-sm underline italic hover:text-primary transition-colors"
-                >
-                  Viber
-                </a>
-                <a
                   href="https://www.google.com/maps/search/Libertad+Laserski+centar+Petefi+%C5%A0andora+172+Novi+Sad"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -372,6 +352,7 @@ function Index() {
                   Lokacija
                 </a>
               </div>
+
             </div>
           </div>
           <div className="pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.2em] text-foreground/40">
