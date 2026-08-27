@@ -32,8 +32,8 @@ export const Route = createFileRoute("/")({
 });
 
 const PHONE = "063 7070936";
-const PHONE_LINK = "tel:0637070936";
-const WHATSAPP_LINK = "https://wa.me/381637070936";
+const PHONE_LINK = "tel:+381637070936";
+
 
 const tretmani = [
   { naziv: "Lice i brada", slika: tretmanLice, alt: "Nežan tretman lica — orhideja" },
@@ -99,6 +99,7 @@ function Index() {
           >
             Zakažite termin
           </a>
+
         </nav>
       </header>
 
