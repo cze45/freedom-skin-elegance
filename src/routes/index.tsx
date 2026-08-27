@@ -299,8 +299,8 @@ function Index() {
             Vaša glatka koža počinje ovde.
           </h2>
           <p className="text-foreground/60 max-w-xl mx-auto">
-            Pozovite nas ili nam pišite na WhatsApp / Viber — zakazaćemo vaše
-            besplatne konsultacije i odgovoriti na sva pitanja.
+            Pozovite nas — zakazaćemo vaše besplatne konsultacije i odgovorićemo
+            na sva pitanja.
           </p>
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
@@ -309,15 +309,8 @@ function Index() {
             >
               Pozovite: {PHONE}
             </a>
-            <a
-              href={WHATSAPP_LINK}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex justify-center items-center border border-foreground/20 px-10 py-4 rounded-full font-semibold transition-all hover:bg-secondary"
-            >
-              WhatsApp / Viber
-            </a>
           </div>
+
         </div>
       </section>
 
