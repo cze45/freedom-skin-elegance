@@ -344,20 +344,6 @@ function Index() {
               </a>
               <div className="flex space-x-4">
                 <a
-                  href={WHATSAPP_LINK}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-sm underline italic hover:text-primary transition-colors"
-                >
-                  WhatsApp
-                </a>
-                <a
-                  href="viber://chat?number=%2B381637070936"
-                  className="text-sm underline italic hover:text-primary transition-colors"
-                >
-                  Viber
-                </a>
-                <a
                   href="https://www.google.com/maps/search/Libertad+Laserski+centar+Petefi+%C5%A0andora+172+Novi+Sad"
                   target="_blank"
                   rel="noopener noreferrer"
@@ -366,6 +352,7 @@ function Index() {
                   Lokacija
                 </a>
               </div>
+
             </div>
           </div>
           <div className="pt-8 flex flex-col md:flex-row justify-between items-center text-[10px] uppercase tracking-[0.2em] text-foreground/40">
