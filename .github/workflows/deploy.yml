@@ -36,6 +36,19 @@ jobs:
 
       - name: Build project
         run: npm run build
+        
+      - name: Debug - Check build output
+        run: |
+          echo "Checking for dist folder..."
+          ls -la
+          echo "---"
+          if [ -d "dist" ]; then
+            echo "dist folder found"
+            ls -la dist/
+          else
+            echo "ERROR: dist folder not found"
+            exit 1
+          fi
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
