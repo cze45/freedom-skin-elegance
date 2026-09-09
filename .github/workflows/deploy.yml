@@ -47,6 +47,8 @@ jobs:
             ls -la dist/
           else
             echo "ERROR: dist folder not found"
+            echo "Current directory contents:"
+            find . -maxdepth 2 -type d
             exit 1
           fi
 
