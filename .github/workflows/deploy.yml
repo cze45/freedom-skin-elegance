@@ -39,14 +39,14 @@ jobs:
         
       - name: Debug - Check build output
         run: |
-          echo "Checking for dist folder..."
+          echo "Checking for build output..."
           ls -la
           echo "---"
-          if [ -d "dist" ]; then
-            echo "dist folder found"
-            ls -la dist/
+          if [ -d ".output/public" ]; then
+            echo "Build output found"
+            ls -la .output/public/
           else
-            echo "ERROR: dist folder not found"
+            echo "ERROR: Build output not found"
             echo "Current directory contents:"
             find . -maxdepth 2 -type d
             exit 1
@@ -58,7 +58,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: 'dist'
+          path: '.output/public'
 
       - name: Deploy to GitHub Pages
         id: deployment
